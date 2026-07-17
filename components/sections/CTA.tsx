@@ -6,8 +6,10 @@ import Button from "@/components/ui/Button";
 
 export default function CTA() {
   return (
-    <section id="contato" className="relative overflow-hidden rounded-t-[36px]">
-
+    <section
+      id="contato"
+      className="relative overflow-hidden"
+    >
       {/* Imagem de fundo */}
 
       <Image
@@ -23,23 +25,22 @@ export default function CTA() {
       <div className="absolute inset-0 bg-slate-950/60" />
 
       <Container>
+        <div className="relative flex min-h-[360px] flex-col items-center justify-center py-20 text-center sm:min-h-[420px] lg:min-h-[440px]">
 
-        <div className="relative flex min-h-[440px] flex-col items-center justify-center text-center">
-
-          <h2 className="max-w-4xl text-5xl font-extrabold leading-tight text-white">
+          <h2 className="max-w-4xl text-3xl font-extrabold leading-tight text-white sm:text-4xl lg:text-5xl">
 
             Encontre a solução ideal para o seu negócio.
 
           </h2>
 
-          <p className="mt-8 max-w-2xl text-xl leading-9 text-slate-200">
+          <p className="mt-6 max-w-2xl text-base leading-8 text-slate-200 sm:mt-7 sm:text-lg sm:leading-8 lg:mt-8 lg:text-xl lg:leading-9">
 
             Junte-se a milhares de profissionais do agronegócio que já
             tomam decisões mais inteligentes com a GPX.
 
           </p>
 
-          <Button className="mt-12 flex items-center gap-3 px-10 py-4 text-lg shadow-2xl">
+          <Button className="mt-10 flex w-full max-w-xs items-center justify-center gap-3 px-8 py-4 text-base shadow-2xl sm:mt-12 sm:w-auto sm:px-10 sm:text-lg">
 
             Começar agora
 
@@ -48,9 +49,7 @@ export default function CTA() {
           </Button>
 
         </div>
-
       </Container>
-
     </section>
   );
 }

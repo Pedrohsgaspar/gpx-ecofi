@@ -151,21 +151,21 @@ export default function Ecosystem() {
   return (
     <section
       id="ecossistema"
-      className="relative overflow-hidden bg-[#0D2943] py-28"
+      className="relative overflow-hidden bg-[#0D2943] py-16 sm:py-20 lg:py-28"
     >
       {/* Fundo */}
 
-      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_top,#38bdf8,transparent_55%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#38bdf8,transparent_55%)] opacity-10" />
 
       <Container>
 
-        <div className="mx-auto max-w-4xl text-center">
+        <div className="mx-auto max-w-4xl px-2 text-center">
 
-          <span className="text-xs font-semibold uppercase tracking-[0.35em] text-cyan-300">
+          <span className="text-[10px] font-semibold uppercase tracking-[0.28em] text-cyan-300 sm:text-xs sm:tracking-[0.35em]">
             Um ecossistema integrado de inteligência ambiental e econômica
           </span>
 
-          <h2 className="mt-5 text-5xl font-extrabold text-white">
+          <h2 className="mt-4 text-3xl font-extrabold text-white sm:mt-5 sm:text-4xl lg:text-5xl">
             A GPX Conecta:
           </h2>
 
@@ -173,7 +173,7 @@ export default function Ecosystem() {
 
         {/* Grid */}
 
-        <div className="mt-16 grid gap-7 md:grid-cols-2 xl:grid-cols-5">
+        <div className="mt-12 grid gap-5 sm:mt-14 sm:grid-cols-2 lg:gap-6 xl:mt-16 xl:grid-cols-5 xl:gap-7">
 
           {ecosystemCards.map((card) => {
 
@@ -183,23 +183,23 @@ export default function Ecosystem() {
 
               <div
                 key={card.title}
-                className="rounded-3xl border border-cyan-900/60 bg-white/5 p-7 backdrop-blur transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-[0_20px_60px_rgba(6,182,212,.18)]"
+                className="rounded-3xl border border-cyan-900/60 bg-white/5 p-5 backdrop-blur transition-all duration-500 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-[0_20px_60px_rgba(6,182,212,.18)] active:-translate-y-2 active:border-cyan-400 active:shadow-[0_20px_60px_rgba(6,182,212,.18)] sm:p-6 lg:p-7"
               >
 
-                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-500/15">
+                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan-500/15 sm:mb-6 sm:h-14 sm:w-14">
 
                   <Icon
-                    size={28}
-                    className="text-cyan-300"
+                    size={26}
+                    className="text-cyan-300 sm:h-7 sm:w-7"
                   />
 
                 </div>
 
-                <h3 className="text-xl font-bold text-white">
+                <h3 className="text-lg font-bold leading-7 text-white sm:text-xl">
                   {card.title}
                 </h3>
 
-                <div className="mt-6 space-y-3">
+                <div className="mt-5 space-y-3 sm:mt-6">
 
                   {card.items.map((item) => (
 
@@ -208,7 +208,7 @@ export default function Ecosystem() {
                       className="flex items-start gap-3"
                     >
 
-                      <div className="mt-2 h-2 w-2 rounded-full bg-cyan-400" />
+                      <div className="mt-2 h-2 w-2 shrink-0 rounded-full bg-cyan-400" />
 
                       <span className="text-sm leading-6 text-slate-300">
                         {item}
