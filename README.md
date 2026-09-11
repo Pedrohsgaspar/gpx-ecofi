@@ -28,7 +28,7 @@ https://gpx-ecofi.vercel.app
 
 ## Screenshots
 
-*(imagens do projeto)*
+*(Imagens do projeto)*
 
 ## Desenvolvido por
 
